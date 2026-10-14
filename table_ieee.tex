@@ -1,0 +1,27 @@
+\begin{table}
+\caption{Performance and calibration metrics (mean over 5 seeds).}
+\label{tab:results}
+\begin{tabular}{llrrrrrr}
+\toprule
+ &  & Accuracy & F1 & AUC & Brier & LogLoss & ECE \\
+Model & Variant &  &  &  &  &  &  \\
+\midrule
+\multirow[t]{3}{*}{Naive Bayes} & Raw & 0.9842 & 0.9387 & 0.9912 & 0.0129 & 0.0530 & 0.0076 \\
+ & Platt & 0.9844 & 0.9397 & 0.9911 & 0.0134 & 0.0601 & 0.0073 \\
+ & Isotonic & 0.9842 & 0.9392 & 0.9910 & 0.0130 & 0.0534 & 0.0058 \\
+\cline{1-8}
+\multirow[t]{3}{*}{Logistic Regression} & Raw & 0.9822 & 0.9296 & 0.9911 & 0.0146 & 0.0648 & 0.0219 \\
+ & Platt & 0.9846 & 0.9401 & 0.9909 & 0.0127 & 0.0536 & 0.0099 \\
+ & Isotonic & 0.9844 & 0.9403 & 0.9905 & 0.0126 & 0.0560 & 0.0081 \\
+\cline{1-8}
+\multirow[t]{3}{*}{Linear SVM} & Raw & 0.9844 & 0.9387 & 0.9916 & 0.0751 & 0.3138 & 0.2473 \\
+ & Platt & 0.9855 & 0.9435 & 0.9913 & 0.0119 & 0.0508 & 0.0090 \\
+ & Isotonic & 0.9855 & 0.9443 & 0.9903 & 0.0118 & 0.0541 & 0.0085 \\
+\cline{1-8}
+\multirow[t]{3}{*}{Random Forest} & Raw & 0.9787 & 0.9134 & 0.9890 & 0.0194 & 0.0827 & 0.0253 \\
+ & Platt & 0.9828 & 0.9323 & 0.9882 & 0.0139 & 0.0599 & 0.0090 \\
+ & Isotonic & 0.9842 & 0.9386 & 0.9873 & 0.0135 & 0.0581 & 0.0081 \\
+\cline{1-8}
+\bottomrule
+\end{tabular}
+\end{table}

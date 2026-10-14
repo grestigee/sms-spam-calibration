@@ -1,0 +1,13 @@
+Model,Variant,P(spam) prize msg,P(spam) lunch msg
+Naive Bayes,Raw,0.999,0.0
+Naive Bayes,Platt,0.993,0.009
+Naive Bayes,Isotonic,1.0,0.0
+Logistic Regression,Raw,0.967,0.002
+Logistic Regression,Platt,0.997,0.0
+Logistic Regression,Isotonic,0.997,0.0
+Linear SVM,Raw,0.73,0.18
+Linear SVM,Platt,0.997,0.0
+Linear SVM,Isotonic,1.0,0.0
+Random Forest,Raw,0.876,0.0
+Random Forest,Platt,0.998,0.008
+Random Forest,Isotonic,1.0,0.0
